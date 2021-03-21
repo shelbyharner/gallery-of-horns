@@ -3,7 +3,8 @@ import React from 'react';
 import './App.css';
 import Footer from './Footer.js';
 import Header from './Header.js';
-// import Main from './Main.js';
+import HornedBeast from './HornedBeast.js';
+import Main from './Main.js';
 
 class App extends React.Component {
   render() {
@@ -13,9 +14,9 @@ class App extends React.Component {
         <Header />
       </header>
 
-      {/* <main>
+      <main>
         <Main />
-      </main> */}
+      </main>
 
       <footer>
         <Footer />
