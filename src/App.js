@@ -1,9 +1,27 @@
 import React from 'react';
+
 import './App.css';
+import './Footer.js';
+import './Header.js';
+import './Main.js';
 
 class App extends React.Component {
   render() {
-    return (<h1>Hello World</h1>)
+    return (
+    <div>
+      <header>
+        <Header />
+      </header>
+      
+      <main>
+        <Main />
+      </main>
+
+      <footer>
+        <Footer />
+      </footer>
+    </div>
+    );
   }
 }
 
