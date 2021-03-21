@@ -1,9 +1,9 @@
 import React from 'react';
 
 import './App.css';
-import './Footer.js';
-import './Header.js';
-import './Main.js';
+import Footer from './Footer.js';
+import Header from './Header.js';
+// import Main from './Main.js';
 
 class App extends React.Component {
   render() {
@@ -12,10 +12,10 @@ class App extends React.Component {
       <header>
         <Header />
       </header>
-      
-      <main>
+
+      {/* <main>
         <Main />
-      </main>
+      </main> */}
 
       <footer>
         <Footer />
@@ -24,7 +24,5 @@ class App extends React.Component {
     );
   }
 }
-
-
 
 export default App;
