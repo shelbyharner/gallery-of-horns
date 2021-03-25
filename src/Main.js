@@ -56,7 +56,7 @@ class Main extends React.Component {
 
         <HornedBeast
           title="Narwhal costume"
-          img_url="ttps://ae01.alicdn.com/kf/HTB18GwSQVXXXXaZaXXXq6xXFXXXh/Animal-Cosplay-Costume-Narwhal-Onesie-Mens-Womens-Cartoon-Whale-Pajamas.jpg"
+          img_url="https://ae01.alicdn.com/kf/HTB18GwSQVXXXXaZaXXXq6xXFXXXh/Animal-Cosplay-Costume-Narwhal-Onesie-Mens-Womens-Cartoon-Whale-Pajamas.jpg"
           description="A woman wearing a blue narwhal costume"
         />
 
@@ -92,7 +92,7 @@ class Main extends React.Component {
 
         <HornedBeast
           title="Addax"
-          img_url="ttps://images.unsplash.com/photo-1556890077-020ec300d5db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80"
+          img_url="https://images.unsplash.com/photo-1556890077-020ec300d5db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80"
           description="This guy is basically extinct but survives well in captivity, so they're frequently found in zoos"
         />
 
