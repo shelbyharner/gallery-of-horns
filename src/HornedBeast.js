@@ -1,14 +1,34 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Card from 'react-bootstrap/Card';
 
 class HornedBeast extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      votes: 0
+    }
+  }
+
+  numOfClicks = () => {
+    this.setState({votes: this.state.votes + 1});
+  }
+
   render() {
     return (
-      <div>
-        <h2>{this.props.title}</h2>
-        <img src={this.props.img_url} alt={this.props.alt} title={this.props.title} />
-        <p>{this.props.description}</p>
-      </div>
-    )
+      <Card 
+        style={{ width: '18rem' }}
+        onClick={this.numOfClicks}>
+        <Card.Img variant="top" src={this.props.img_url}/>
+        <Card.Body>
+          <Card.Title>{this.props.title}</Card.Title>
+          <Card.Text>{this.props.description}</Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          😻 = {this.state.votes}
+        </Card.Footer>
+      </Card>
+    );
   }
 }
 
