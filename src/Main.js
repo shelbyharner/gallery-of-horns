@@ -1,10 +1,20 @@
-import HornedBeast from './HornedBeast.js';
 import React from 'react';
-// import data from './data.json';
+import HornedBeast from './HornedBeast.js';
+import Data from './data.json';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import CardColumns from 'react-bootstrap/CardColumns'
 
 class Main extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      beastData: Data,
+    }   
+  }
+
   render() {
     return (
+      <CardColumns>
       <div>
         <HornedBeast
           title="Uniwal"
@@ -125,9 +135,9 @@ class Main extends React.Component {
           img_url="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Smaug_par_David_Demaret.jpg/290px-Smaug_par_David_Demaret.jpg"
           description="Fan illustration of Smaug from 'The Hobbit'"
         />
-
       </div>
-    )
+      </CardColumns>
+    );
   }
 }
 
