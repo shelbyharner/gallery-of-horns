@@ -79,12 +79,12 @@ Actual time needed to complete: 55 minutes
 
 Number and name of feature: Allow users to vote for their favorite beast
 Estimate of time needed to complete: 1 hour
-Start time: _____
-Finish time: _____
+Start time: 1) 9:45  2)
+Finish time: 1) 10:10  2)
 Actual time needed to complete:
 
 Number and name of feature: Bootstrap
 Estimate of time needed to complete: 1 hour
-Start time: _____
-Finish time: _____
-Actual time needed to complete:
+Start time: 1) 10:10
+Finish time: 11:15
+Actual time needed to complete: 1 hour 5 min
