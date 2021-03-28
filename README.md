@@ -92,7 +92,7 @@ Actual time needed to complete: 1 hour 5 minutes
 ### Lab 3 - Time Estimates
 
 Number and name of feature: Modal
-Estimate of time needed to complete: 60 minutes
+Estimate of time needed to complete: 2 hours
 Start time: 2:30
 Finish time: 
 Actual time needed to complete: 
