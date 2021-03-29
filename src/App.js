@@ -13,18 +13,18 @@ class App extends React.Component {
     this.state = {
       beastData: Data,
       modalOn: false,
-      clickedBeast: {}
+      clickedBeast: Data[0]
     };
   }
 
-  modalOn = (index) => {
+  showModal = (index) => {
     this.setState({
       modalOn: true,
       clickedBeast: Data[index],
     });
   }
 
-  modalOff = () => {
+  hideModal = () => {
     this.setState({modalOn: false});
   }
 
@@ -34,13 +34,13 @@ class App extends React.Component {
         <Header />
 
         <Main 
-          beasts={this.beastData}
-          modalOn={this.state.modalOn}
+          beasts={this.state.beastData}
+          showModal={this.showModal}
         />
 
         <SelectedBeast
           modalOn={this.state.modalOn}
-          modalOff={this.state.modalOff}
+          modalOff={this.hideModal}
           clickedBeast={this.state.clickedBeast}
         />
 
