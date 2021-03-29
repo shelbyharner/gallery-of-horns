@@ -7,7 +7,7 @@ class Main extends React.Component {
     return (
       <>
         <CardColumns>
-          {this.props.beast.map((beast, index) => {
+          {this.props.beasts.map((beast, index) => {
             return (
               <HornedBeast
                 key={index}
@@ -15,7 +15,8 @@ class Main extends React.Component {
                 title={beast.title}
                 img_url={beast.image_url}
                 description={beast.description}
-                modalOn={this.props.modalOn}
+                showModal={this.props.showModal}
+                index={index}
               />
             )
           })}

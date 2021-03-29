@@ -11,6 +11,7 @@ class HornedBeast extends React.Component {
 
   numOfClicks = () => {
     this.setState({votes: this.state.votes + 1});
+    this.props.showModal(this.props.index);
   }
 
   render() {
