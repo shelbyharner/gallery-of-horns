@@ -6,6 +6,7 @@ import Footer from './Footer.js';
 import Header from './Header.js';
 import Main from './Main.js';
 import SelectedBeast from './SelectedBeast';
+import HornForm from './HornForm';
 
 class App extends React.Component {
   constructor(props) {
@@ -13,7 +14,7 @@ class App extends React.Component {
     this.state = {
       beastData: Data,
       modalOn: false,
-      clickedBeast: Data[0]
+      clickedBeast: Data[0],
     };
   }
 
@@ -28,10 +29,30 @@ class App extends React.Component {
     this.setState({modalOn: false});
   }
 
+  handleFilteredHorns = (event) => {
+    console.log('filter');
+    const numOfHorns = parseInt(event.target.value); 
+
+    let filteredArray = Data;
+    if (numOfHorns) {
+      filteredArray = Data.filter(element => element.horns === numOfHorns);
+    }
+    this.renderFilteredBeast(filteredArray);
+  };
+
+  renderFilteredBeast = (data) => {
+    this.setState({beastData: data});
+  }
+
   render() {
     return (
     <div>
         <Header />
+
+        <HornForm 
+          onChange={this.handleFilteredHorns}
+          beasts={this.state.beastData}
+        />
 
         <Main 
           beasts={this.state.beastData}
