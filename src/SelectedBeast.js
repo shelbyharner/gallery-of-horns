@@ -9,18 +9,18 @@ class SelectedBeast extends React.Component {
         <Modal show={this.props.modalOn} onHide={this.props.modalOff}>
           <Modal.Dialog>
             <Modal.Header closeButton>
-              <Modal.Title>{this.props.clickedBeast.title}</Modal.Title>
+              <Modal.Title>
+                <h3>{this.props.clickedBeast.title}</h3>
+              </Modal.Title>
             </Modal.Header>
 
             <Modal.Body>
-              <p>
                 <img src={this.props.clickedBeast.image_url} alt="" className="modal_image"></img>
-                {this.props.clickedBeast.description}
-              </p>
+                <p>{this.props.clickedBeast.description}</p>
             </Modal.Body>
 
             <Modal.Footer>
-              <Button variant="primary" onClick={this.props.modalOff}>Close</Button>
+              <Button variant="info" onClick={this.props.modalOff}>Close</Button>
             </Modal.Footer>
           </Modal.Dialog>
         </Modal>

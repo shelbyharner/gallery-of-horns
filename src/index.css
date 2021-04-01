@@ -13,5 +13,6 @@ code {
 }
 
 .modal_image {
-  width: 100px;
+  width: 300px;
+  margin-bottom: 30px;
 }
